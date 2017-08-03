@@ -1,7 +1,7 @@
 # barrage
 ## 一个简易的弹幕demo，支持开关，支持左右移动切换
 
-* 自定义XCDanmuView继承relativelayout，没产生一次弹幕就创建一个textview添加到XCDanmuView中，并添加属性动画，当动画结束时remove该textview<br>
+* 自定义XCDanmuView继承relativelayout，每产生一次弹幕就创建一个textview添加到XCDanmuView中，并添加属性动画，当动画结束时remove该textview<br>
 ```
  //创建弹幕item view 并addView到XCDanmuView中
     public void createDanmuView(String content, boolean isMine) {
@@ -81,5 +81,6 @@
         animator.start();
     }
 ```
-![img]()
+#### 效果如图：<brl>
+![](https://github.com/Mrgl1203/barrage/blob/master/barrage-gif.gif)
     
