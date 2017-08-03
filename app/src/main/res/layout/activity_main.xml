@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="barrage.gl.com.barrage.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="关闭弹幕" />
+
+        <Button
+            android:id="@+id/change"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="变换方向" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/linear"
+        android:imeActionLabel="发送"
+        android:imeOptions="actionSend"
+        android:singleLine="true" />
+
+    <barrage.gl.com.barrage.XCDanmuView
+        android:id="@+id/danmu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/edit">
+
+    </barrage.gl.com.barrage.XCDanmuView>
+</RelativeLayout>
