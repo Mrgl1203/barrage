@@ -82,5 +82,5 @@
     }
 ```
 #### 效果如图：<brl>
-![](https://github.com/Mrgl1203/barrage/blob/master/barrage-gif.gif)
+![](https://github.com/Mrgl1203/barrage/blob/master/barrage-gif2.gif)
     
